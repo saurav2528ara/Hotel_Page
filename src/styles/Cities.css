@@ -1,0 +1,58 @@
+.cities {
+    padding: 20px;
+}
+
+.cities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.city-card {
+    margin: 10px;
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    
+}
+
+.city-card img:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.city-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px; /* Keep as squares on desktop view */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for hover effect */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .cities-grid {
+        flex-wrap: nowrap; /* Prevent wrapping for horizontal scrolling */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        justify-content: flex-start; /* Align items to the start */
+    }
+
+    .city-card {
+        flex: 0 0 auto; /* Prevent shrinking */
+        width: 80px; /* Set a fixed width for each card */
+        margin: 10px 5px; /* Adjust margin for better spacing */
+    }
+
+    .city-card img {
+        width: 60px; /* Smaller image size */
+        height: 60px; /* Smaller image size */
+        border-radius: 50%; /* Make the images circular on mobile view */
+    }
+
+    .city-card h3 {
+        display: block; /* Ensure the city name is displayed */
+        font-size: 12px; /* Adjust font size if necessary */
+        margin-top: 5px; /* Space between the image and the name */
+    }
+}

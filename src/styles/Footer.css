@@ -1,0 +1,102 @@
+.footer {
+    background-color: #2b0b46;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    font-size: 20px;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+.footer-section .social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.footer-section .social-media a {
+    color: #000; /* Adjust icon color if needed */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.footer-section .social-media a i {
+    color: #ddd;
+}
+
+.footer-section .social-media a:hover i {
+    color: #fff;
+    transform: scale(1.2); 
+}
+
+.footer-section .social-media a:hover {
+    
+    transform: scale(1.2); 
+}
+
+.footer-section .social-media .fab .fa-facebook {
+    font-size: 3em; /* Adjust the base size of the icons */
+}
+
+.footer-section .social-media .fab .fa-twitter {
+    font-size: 3em; /* Adjust the base size of the icons */
+}
+
+.footer-section .social-media .fab .fa-instagram {
+    font-size: 3em; /* Adjust the base size of the icons */
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}

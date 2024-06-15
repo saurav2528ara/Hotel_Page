@@ -1,0 +1,124 @@
+:root {
+    --hero-bg-color: #ff4081;
+    --hero-text-color: rgb(250, 249, 252);
+    --button-bg-color: #3d0e69fa;
+    --button-text-color: white;
+    --focus-outline-color: rgba(255, 64, 129, 0.5);
+    --toggle-bg-color: #ddd;
+    --toggle-active-bg-color: #331c85;
+    --toggle-text-color: #fff;
+    --toggle-text-color-inactive: #000;
+}
+
+.hero {
+    background: url('../styles/hero-background.jpg') no-repeat center center;
+    /* background-image: url('../../assets/images/hero-background.jpg'); */
+    background-size: cover;
+    padding: 50px 20px;
+    color: var(--hero-text-color);
+    text-align: left;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 2.5em;
+    line-height: 1;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.0em;
+    background-color: var(--toggle-bg-color);
+    color: var(--toggle-text-color-inactive);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button.active {
+    background-color: var(--toggle-active-bg-color);
+    color: var(--toggle-text-color);
+}
+
+.toggle-button input {
+    display: none;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+    padding: 10px 20px;
+    border-radius: 600px; /* Makes the container rounded */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+}
+
+.search-box select {
+    padding: 10px;
+    margin: 3px;
+    border: none;
+    border-radius: 30px; /* Rounded border */
+    font-size: 0.5em;
+}
+
+
+.search-box input,
+.search-box button {
+    padding: 10px;
+    margin: 3px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+.search-box input:focus,
+.search-box button:focus {
+    outline: 2px solid var(--focus-outline-color);
+    outline-offset: 2px;
+}
+
+.search-box button {
+    background: var(--button-bg-color);
+    color: var(--button-text-color);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.search-box button:hover {
+    background: darken(var(--button-bg-color), 10%);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        font-size: 2em;
+        padding-left: 10px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

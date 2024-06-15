@@ -1,0 +1,220 @@
+/* Container for search results and filter */
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 25px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Filter section styles */
+.search-filter {
+    width: 250px;
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-filter h2 {
+    margin-bottom: 20px;
+}
+
+.clear-all-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.reset-btn {
+    display: block;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-align: left;
+}
+
+.filter-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.filter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.filter-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filter-list-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Container for search results */
+.search-results {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual search card */
+.search-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.search-card:hover {
+    transform: translateY(-5px);
+}
+
+.search-card-image {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+.search-card-details {
+    padding: 15px;
+    width: 50%;
+}
+
+/* Name of the hotel */
+.search-card-name {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Location of the hotel */
+.search-card-location {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Container for rating and price */
+.search-card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Rating of the hotel */
+.search-card-rating {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+/* Price of the hotel */
+.search-card-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Amenities of the hotel */
+.search-card-amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-card-amenity {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Hotel type description */
+.hotel-type-description {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column; /* Stack filter and results vertically */
+    }
+
+    .search-filter {
+        width: 100%; 
+        margin-bottom: 0px; 
+    }
+
+    .search-card {
+        flex-direction: column; /* Stack image and details vertically */
+    }
+
+    .search-card-image {
+        width: 100%; 
+        height: 100px; 
+        border-radius: 0; 
+    }
+
+    .search-card-details {
+        width: 100%; /* Full width for details */
+        padding: 15px;
+    }
+
+    .search-card-price {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-card-name {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .search-card-location {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .search-card-rating,
+    .search-card-price {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}

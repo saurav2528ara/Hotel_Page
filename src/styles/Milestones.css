@@ -1,0 +1,20 @@
+.milestones {
+    display: flex;
+    justify-content: space-around;
+    /* padding: 20px; */
+    padding: 80px 20px 60px 40px;
+    background: #f0f0f0;
+    background: url('../styles/milestone.jpg') no-repeat center center;
+    background-size: cover; 
+}
+.milestone {
+    text-align: center;
+}
+.milestone h2 {
+    font-size: 2em;
+    color: #06020a;
+}
+.milestone p {
+    font-size: 2em;
+    color: #06020a;
+}

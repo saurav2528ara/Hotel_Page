@@ -1,0 +1,61 @@
+/* Header.css */
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: transparent; /* Fully transparent background */
+    color: white;
+    position: absolute; /* Position it above the background image */
+    width: 100%; /* Make sure it spans the full width */
+    top: 0; /* Align it to the top */
+   
+}
+
+
+
+
+.header .logo {
+    font-size: 1.5em;
+    color: white;
+    
+}
+
+.header .logo a {
+    text-decoration: none;
+    color: inherit; 
+    /* font-size: 2rem; */
+}
+
+.header .logo a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.header nav ul li {
+    margin: 0 30px;
+    font-size: x-large;
+    
+}
+.header nav ul li.signup {
+    border: 2px solid white; /* Add border */
+    padding: 5px 10px; /* Add padding inside the border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    
+}
+
+.header nav ul li.signup a {
+    color: white; /* Ensure the text color matches the header */
+    text-decoration: none; /* Remove underline from link */
+}
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
