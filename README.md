@@ -1,4 +1,4 @@
-# Deploy --> https://hotel-page-htgi.vercel.app/
+### Deploy --> https://hotel-page-htgi.vercel.app/
 
 # Features
 
