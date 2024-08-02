@@ -1,21 +1,21 @@
-#Features
+# Features
 
-##Dynamic Routing: Implemented dynamic routing using react-router-dom.
-##Custom Hooks: Integrated custom hooks for enhanced functionality.
-##Responsive Design: Ensured complete responsiveness for a seamless user interface.
-##React Slick: A React wrapper for Slick Carousel, enabling easy integration of responsive carousels in React applications using JSX.
-##Slick Carousel: A widely-used jQuery-based slider library known for its flexibility, responsiveness, and rich feature set.
+## Dynamic Routing: Implemented dynamic routing using react-router-dom.
+## Custom Hooks: Integrated custom hooks for enhanced functionality.
+## Responsive Design: Ensured complete responsiveness for a seamless user interface.
+## React Slick: A React wrapper for Slick Carousel, enabling easy integration of responsive carousels in React applications using JSX.
+## Slick Carousel: A widely-used jQuery-based slider library known for its flexibility, responsiveness, and rich feature set.
 
 
 
-#Tech-Stack
+# Tech-Stack
 
-##Frontend Library: React
-##Styling: CSS
-##Package Manager: npm
-##Transpiler: Babel
-##Bundler: Parcel
-##Routing: React Router
+## Frontend Library: React
+## Styling: CSS
+## Package Manager: npm
+## Transpiler: Babel
+## Bundler: Parcel
+## Routing: React Router
 
 
 
